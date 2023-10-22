@@ -50,11 +50,29 @@ ul li{
   font-weight: 800;
 }
 
+.container{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container #search{
+  cursor: pointer;
+  margin-left: 15px;
+  padding: 12px 25px;
+  background-color: #4C8787;
+  color: white;
+  font-weight: 800;
+  font-family: 'roboto';
+  letter-spacing: 1.2px;
+  border: none;
+}
+
 .searchBar{
   display: flex;
   align-items: center;
-  margin: auto;
-  margin: 25px auto;
+  margin: 25px 0;
   padding: 0 15px;
   width: 25%;
   height: 40px;
@@ -81,3 +99,49 @@ ul li{
   outline: none;
 }
 
+.banner{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.iconText{
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.iconText img{
+  padding: 0 15px;
+  width: 20px;
+}
+
+.main{
+  margin-top: 50px;
+  background-color: rgba(218, 163, 25, 0.726);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main img{
+  width: 50%;
+}
+
+.content h1{
+  width: 80%;
+  padding: 40px 0;
+  text-align: center;
+  color: #A86A3D;
+  font-size: 2.7vw;
+}
+
+.view{
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #4C8787;
+  border: 2px solid white;
+  color: white;
+  font-family: 'roboto';
+  box-shadow: 0 3px 5px black;
+}
