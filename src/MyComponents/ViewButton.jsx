@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function ViewButton(props) {
   return (
-    <button class='view'>{props.title}</button>
+    <button className='view'>{props.title}</button>
   )
 }

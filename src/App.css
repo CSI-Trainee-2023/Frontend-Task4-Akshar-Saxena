@@ -251,3 +251,96 @@ ul li {
   font-size: 0.8rem;
   text-decoration: line-through;
 }
+
+.topRating{
+  margin: auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topRating h2{
+  font-size: 2rem;
+  margin: 30px 0 10px 0;
+}
+
+.topRatingHolder{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.topRatingCard{
+  background-color: white;
+  margin: 20px 0;
+  display: flex;
+  width: 400px;
+}
+
+.topRatingCard img{
+  width: 150px;
+}
+
+.priceTopRating{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.priceTopRating h3{
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.priceTopRating h2{
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.subscribePromotion{
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.headingLeft{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 6px;
+}
+
+.headingLeft h3{
+  font-weight: 100;
+}
+
+.emailInputField{
+  width: 35%;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid black;
+}
+
+.emailInputField input{
+  border: none;
+  width: 100%;
+  padding: 9px 5px;
+  font-size: 1.2rem;
+}
+
+.emailInputField a{
+  background-color: #4C8787;
+}
+
+.emailInputField a img{
+  width: 20px;
+  padding: 10px 25px;
+}
