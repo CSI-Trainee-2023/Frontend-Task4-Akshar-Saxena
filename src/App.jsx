@@ -39,7 +39,7 @@ const verticalImages = [
   },
   {
     id: "mat.png",
-    decs: "Round Jute Placemat",
+    desc: "Round Jute Placemat",
     price: "49.9$"
   },
   {
