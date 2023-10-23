@@ -35,7 +35,7 @@
 }
 
 
-ul {
+ul:first-child {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -146,14 +146,14 @@ ul li {
   box-shadow: 0 3px 5px black;
 }
 
-.horizontalCardHolder{
+.horizontalCardHolder {
   margin: 50px 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.horizontalCard{
+.horizontalCard {
   width: 40%;
   height: 25vw;
   display: flex;
@@ -162,19 +162,19 @@ ul li {
   background-color: #E5E4E2;
 }
 
-.horizontalCard:first-child{
+.horizontalCard:first-child {
   background-color: white;
 }
 
-.cardContent{
+.cardContent {
   padding: 0 30px;
 }
 
-.cardContent h2{
+.cardContent h2 {
   padding: 30px 0;
 }
 
-.horizontalCard img{
+.horizontalCard img {
   width: 50%;
   height: 100%;
 }
@@ -187,12 +187,12 @@ ul li {
   align-items: center;
 }
 
-.verticalCard h2{
+.verticalCard h2 {
   padding: 15px 0;
   font-size: 1.1rem;
 }
 
-.verticalCard h3{
+.verticalCard h3 {
   padding: 15px 0;
 }
 
@@ -212,15 +212,15 @@ ul li {
   flex-wrap: wrap;
 }
 
-.bedSheetSection img{
+.bedSheetSection img {
   width: 100%;
 }
 
-.bedSheetSection{
+.bedSheetSection {
   position: relative;
 }
 
-.overImageContent{
+.overImageContent {
   padding: 20px;
   position: absolute;
   width: 30%;
@@ -230,29 +230,32 @@ ul li {
   background-color: rgba(249, 211, 112, 0.8);
 }
 
-.overImageContent h2,h3,h4{
+.overImageContent h2,
+h3,
+h4 {
   padding: 25px 70px;
 }
 
-.overImageContent h4{
+.overImageContent h4 {
   font-weight: 100;
 }
 
-.overImageContent h3{
+.overImageContent h3 {
   font-size: 1.6rem;
 }
 
-.overImageContent h3, span{
+.overImageContent h3,
+span {
   color: #623312;
 }
 
-.overImageContent span{
+.overImageContent span {
   padding: 0 20px;
   font-size: 0.8rem;
   text-decoration: line-through;
 }
 
-.topRating{
+.topRating {
   margin: auto;
   width: 95%;
   display: flex;
@@ -261,47 +264,47 @@ ul li {
   align-items: center;
 }
 
-.topRating h2{
+.topRating h2 {
   font-size: 2rem;
   margin: 30px 0 10px 0;
 }
 
-.topRatingHolder{
+.topRatingHolder {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.topRatingCard{
+.topRatingCard {
   background-color: white;
   margin: 20px 0;
   display: flex;
   width: 400px;
 }
 
-.topRatingCard img{
+.topRatingCard img {
   width: 150px;
 }
 
-.priceTopRating{
+.priceTopRating {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.priceTopRating h3{
+.priceTopRating h3 {
   font-size: 0.9rem;
   text-align: center;
 }
 
-.priceTopRating h2{
+.priceTopRating h2 {
   margin: 10px 0;
   font-size: 1.2rem;
 }
 
-.subscribePromotion{
+.subscribePromotion {
   width: 90%;
   margin: 100px auto;
   display: flex;
@@ -309,18 +312,18 @@ ul li {
   justify-content: space-between;
 }
 
-.headingLeft{
+.headingLeft {
   display: flex;
   flex-direction: column;
   align-items: center;
   line-height: 6px;
 }
 
-.headingLeft h3{
+.headingLeft h3 {
   font-weight: 100;
 }
 
-.emailInputField{
+.emailInputField {
   width: 35%;
   height: min-content;
   display: flex;
@@ -329,18 +332,120 @@ ul li {
   outline: 1px solid black;
 }
 
-.emailInputField input{
+.emailInputField input {
   border: none;
   width: 100%;
   padding: 9px 5px;
   font-size: 1.2rem;
 }
 
-.emailInputField a{
+.emailInputField a {
   background-color: #4C8787;
 }
 
-.emailInputField a img{
+.emailInputField a img {
   width: 20px;
   padding: 10px 25px;
+}
+
+.footer {
+  padding: 40px 0 80px 0;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  background-color: #0A032A;
+}
+
+.footerCard:first-child {
+  width: 300px;
+}
+
+.footerCard {
+  width: 200px;
+}
+
+.footerCard p {
+  padding: 10px 0;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footerCard #add,
+#num,
+#mail {
+  padding: 5px 0;
+  font-weight: 600;
+  color: white;
+}
+
+
+.footerCard h2 {
+  padding: 45px 0;
+  font-size: 1.4rem;
+}
+
+.footerCard ul li {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  list-style-type: none;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.links img {
+  padding: 60px 25px 0 25px;
+  height: 25px;
+}
+
+.links img:first-child {
+  padding-left: 0;
+}
+
+
+.footerCard:last-child{
+  width: 300px;
+}
+
+.update{
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.update h2{
+  padding: 0;
+  font-size: 1.9rem;
+}
+
+.update h2 span{
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.update h3{
+  padding: 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+hr{
+  margin: 45px 0;
+  opacity: 0.5;
+}
+
+.brandFooter {
+  color: white;
+  background-color: #050019;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brandFooter h3 {
+  font-weight: 200;
 }

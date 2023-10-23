@@ -5,6 +5,7 @@ import ViewButton from './MyComponents/ViewButton'
 import VerticalCard from './MyComponents/VerticalCard'
 import HorizontalCard from './MyComponents/HorizontalCard'
 import TopRatingCard from './MyComponents/TopRatingCard'
+import Footer from './MyComponents/Footer'
 import freeShipping from '../src/assets/icons/freeShipping.png'
 import refund from '../src/assets/icons/refund.png'
 import support from '../src/assets/icons/support.png'
@@ -182,7 +183,11 @@ function App() {
       </div>
 
       {/* Footer */}
-      
+      <Footer/>
+
+      <div className="brandFooter">
+        <h3>Brand Registered Name &copy; - All rights reserved</h3>
+      </div>
     </>
   )
 }
