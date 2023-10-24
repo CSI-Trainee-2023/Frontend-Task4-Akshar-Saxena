@@ -2,6 +2,7 @@ import React from 'react'
 import brandLogo from '../assets/icons/brandLogo.png'
 import profileIcon from '../assets/icons/profile.png'
 import cartIcon from '../assets/icons/cart.png'
+import {Link} from 'react-router-dom'
 
 export default function NavBar() {
   return (
@@ -15,8 +16,8 @@ export default function NavBar() {
       </div>
       <div className="lower">
         <ul>
-          <li>HOME</li>
-          <li>STORE</li>
+          <li><Link to="/">HOME</Link></li>
+          <li><Link to="/productdetails">STORE</Link></li>
           <li>ACCESSORIES</li>
           <li>BRAND</li>
           <li>PAGES</li>
