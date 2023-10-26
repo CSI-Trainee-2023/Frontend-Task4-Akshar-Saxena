@@ -17,6 +17,11 @@ export default function ProductDetails(props) {
     <div className="right">
         <h1>{location.state.productName}</h1>
         <h3>{location.state.price}</h3>
+        <h4>{location.state.productName}</h4>
+        <div id="itemPicture">
+          <img src={location.state.image} alt="" />
+        </div>
+        <span><img src="../src/assets/icons/location.png" alt="" /> Not available in stores</span>
     </div>
     </div>
     </>

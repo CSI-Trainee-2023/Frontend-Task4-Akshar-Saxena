@@ -32,6 +32,33 @@
 }
 
 .right{
+    display: flex;
+    flex-direction: column;
     width: 30%;
     margin: 50px 0;
+}
+
+.right h3{
+    padding: 15px 0;
+}
+
+.right h4{
+    padding: 15px 0;
+    font-weight: 300;
+}
+
+.right img{
+    width: 60px;
+    outline: 1px solid black;
+}
+
+.right span img{
+    width: 15px;
+    outline: none;
+}
+
+.right span{
+    font-weight: 500;
+    color: grey;
+    padding: 20px 0;
 }
