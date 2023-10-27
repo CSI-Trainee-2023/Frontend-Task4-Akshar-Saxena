@@ -3,14 +3,24 @@ import './ProductDetails.css'
 import NavBar from './MyComponents/NavBar'
 import { useLocation } from 'react-router-dom'
 import Footer from './MyComponents/Footer'
-import ViewButton from './MyComponents/ViewButton'
 import { useEffect } from 'react'
+import images from './verticalImages'
 
 export default function ProductDetails(props) {
   const location = useLocation()
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
+
+  // function randomIndex(){
+  //   var len = verticalImages.length
+  //   var temp = Math.floor(Math.random() * len)
+  //   return temp
+  // }
+  console.log(images)
+
+
   return (
     <>
     <NavBar/>
@@ -47,7 +57,12 @@ export default function ProductDetails(props) {
     </div>
 
     <h2 id='headingYMAL'>Also You May Like</h2>
-
+    {/* <div className="sliderProductPage">
+      <img src={`../src/assets/items/${verticalImages[randomIndex].id}`} alt="" />
+      <img src={`../src/assets/items/${verticalImages[randomIndex].id}`} alt="" />
+      <img src={`../src/assets/items/${verticalImages[randomIndex].id}`} alt="" />
+      <img src={`../src/assets/items/${verticalImages[randomIndex].id}`} alt="" />
+    </div> */}
     <Footer/>
     </>
   )
