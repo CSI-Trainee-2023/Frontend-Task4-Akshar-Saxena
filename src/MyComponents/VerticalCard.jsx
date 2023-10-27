@@ -15,7 +15,7 @@ export default function VerticalCard(props) {
         <div className="hoverContent">
         <h1>DECOR</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur sint officia voluptatibus quos odio doloremque aut vel, magni sapiente expedita.</p>
-        <ViewButton title="VIEW ALL" image={props.image} proName={props.title1} price={props.title2}/>
+        <ViewButton title="VIEW ALL" image={props.image} proName={props.title1} price={props.title2} details={props.details}/>
         </div>
     </div>
     </div>

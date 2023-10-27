@@ -46,8 +46,13 @@ ul:first-child {
 
 ul li {
   cursor: pointer;
+  color: black;
   padding: 10px 0;
   font-weight: 800;
+}
+
+Link{
+  color: black;
 }
 
 .container {
