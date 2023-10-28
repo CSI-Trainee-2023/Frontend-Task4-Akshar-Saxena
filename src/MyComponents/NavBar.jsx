@@ -11,7 +11,7 @@ export default function NavBar() {
         <img src={brandLogo} alt="" />
         <div className="icons">
           <img src={profileIcon} alt="" />
-          <img src={cartIcon} alt="" />
+          <Link to="/checkout"><img src={cartIcon} alt="" /></Link>
         </div>
       </div>
       <div className="lower">

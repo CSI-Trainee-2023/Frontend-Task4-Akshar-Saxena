@@ -1,18 +1,31 @@
 import React from 'react'
 import './ProductDetails.css'
 import NavBar from './MyComponents/NavBar'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import Footer from './MyComponents/Footer'
 import { useEffect } from 'react'
 
 export default function ProductDetails() {
   const location = useLocation()
+  const navigate = useNavigate()
+  try{
+    var itemsInCart = []
+    itemsInCart.push(localStorage.getItem("data"))
+  }
+  catch(e){
+    null
+  }
 
   var posImage = 0
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
+
+  function goToCart(){
+    itemsInCart.push(`${location.state.image},${location.state.productName}|`)
+    localStorage.setItem("data", itemsInCart)
+  }
 
   function goToNext() {
     var slides = document.querySelectorAll('.slides')
@@ -62,7 +75,7 @@ export default function ProductDetails() {
             <option value="4">4</option>
             <option value="5">5</option>
           </select>
-          <button id="addToCart">ADD TO CART</button>
+          <button id="addToCart" onClick={goToCart}>ADD TO CART</button>
         </div>
       </div>
       <div className="detailsContainer">

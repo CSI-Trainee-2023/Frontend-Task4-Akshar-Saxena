@@ -1,4 +1,5 @@
 import './App.css'
+import AddToCart from './AddToCart'
 import HomePage from './HomePage'
 import ProductDetails from './ProductDetails'
 import {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<HomePage/>}/>
           <Route exact path='/productdetails' element={<ProductDetails/>}/>
+          <Route exact path='/checkout' element={<AddToCart/>}></Route>
         </Routes>
       </Router>
     </>
