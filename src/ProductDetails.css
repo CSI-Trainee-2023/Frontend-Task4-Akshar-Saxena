@@ -108,3 +108,37 @@
     padding: 0 100px;
     margin: 50px 0;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.sliderProductPage{
+    display: flex;
+    /* width: fit-content; */
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.sliderProductPage img{
+    width: 20%;
+    margin: 10px 20px;
+    outline: 1px solid black;
+}
+
+.sliderProductPage button{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.148);
+    border: none;
+    font-size: 100px;
+    padding: 10px;
+    color: rgb(57, 57, 57);
+    position: absolute;
+    top: 40%;
+    z-index: 99;
+}
+
+.sliderProductPage #next{
+    left: 100vw;
+    transform: translateX(-100%);
+}
