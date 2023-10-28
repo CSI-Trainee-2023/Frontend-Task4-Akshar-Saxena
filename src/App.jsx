@@ -4,7 +4,6 @@ import ProductDetails from './ProductDetails'
 import {
   BrowserRouter as Router,
   Routes,
-  Link,
   Route
 } from 'react-router-dom'
 

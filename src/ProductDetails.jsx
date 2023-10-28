@@ -10,10 +10,6 @@ export default function ProductDetails() {
 
   var posImage = 0
 
-  function randomIndex() {
-    return Math.floor(Math.random() * location.state.list.length)
-  }
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
@@ -38,7 +34,6 @@ export default function ProductDetails() {
     slides.forEach(element => {
       element.style.transform = `translateX(-${posImage}%)`
       element.style.transition = '1s'
-      element.style.margin = "10px 20px"
     });
   }
 
@@ -81,16 +76,9 @@ export default function ProductDetails() {
       <div className="sliderProductPage">
         <button id="prev" onClick={goToPrev}>&lt;</button>
         <button id="next" onClick={goToNext}>&gt;</button>
-        <img className='slides' src={`../src/assets/items/${location.state.list[randomIndex()].id}`} alt="" />
-        <img className='slides' src={`../src/assets/items/${location.state.list[randomIndex()].id}`} alt="" />
-        <img className='slides' src={`../src/assets/items/${location.state.list[randomIndex()].id}`} alt="" />
-        <img className='slides' src={`../src/assets/items/${location.state.list[randomIndex()].id}`} alt="" />
-        <img className='slides' src={`../src/assets/items/${location.state.list[randomIndex()].id}`} alt="" />
-        <img className='slides' src={`../src/assets/items/${location.state.list[randomIndex()].id}`} alt="" />
-        <img className='slides' src={`../src/assets/items/${location.state.list[randomIndex()].id}`} alt="" />
-        <img className='slides' src={`../src/assets/items/${location.state.list[randomIndex()].id}`} alt="" />
-        <img className='slides' src={`../src/assets/items/${location.state.list[randomIndex()].id}`} alt="" />
-        <img className='slides' src={`../src/assets/items/${location.state.list[randomIndex()].id}`} alt="" />
+        {location.state.list.map((element) => (
+          <img className='slides' src={`../src/assets/items/${element.id}`} alt="" />
+        ))}
       </div>
       <Footer />
     </>
