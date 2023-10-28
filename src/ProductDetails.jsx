@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom'
 import Footer from './MyComponents/Footer'
 import { useEffect } from 'react'
 
-export default function ProductDetails(props) {
+export default function ProductDetails() {
   const location = useLocation()
 
   var posImage = 0
