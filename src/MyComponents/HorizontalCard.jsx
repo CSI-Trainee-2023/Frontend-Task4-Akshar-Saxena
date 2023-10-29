@@ -7,7 +7,7 @@ export default function HorizontalCard(props) {
       <img src={props.image} alt="" />
       <div className="cardContent">
         <h2>{props.title}</h2>
-        <ViewButton title="VIEW DETAILS"/>
+        <ViewButton title="VIEW DETAILS" key="disable"/>
       </div>
     </div>
   )

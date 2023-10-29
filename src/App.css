@@ -12,8 +12,9 @@
 }
 
 .upper {
+  margin: auto;
   padding: 10px 0;
-  width: 100%;
+  width: 90%;
   height: 65px;
   display: flex;
   justify-content: space-around;
@@ -21,7 +22,7 @@
 }
 
 .upper img {
-  width: 16%;
+  width: 30%;
 }
 
 .icons img {

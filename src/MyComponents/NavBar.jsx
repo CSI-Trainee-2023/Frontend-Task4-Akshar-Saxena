@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <div className='nav'>
       <div className="upper">
-        <img src={brandLogo} alt="" />
+        <Link to="/"><img src={brandLogo} alt=""/></Link>
         <div className="icons">
           <img src={profileIcon} alt="" />
           <img src={cartIcon} alt="" />

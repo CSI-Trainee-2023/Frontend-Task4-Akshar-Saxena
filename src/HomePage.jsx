@@ -141,7 +141,7 @@ export default function HomePage() {
                 <div className="content">
                     <h3>HOT DEALS THIS WEEK</h3>
                     <h1>SALE 50% OFF MODERN FURNITURE</h1>
-                    <ViewButton title="VIEW NOW" />
+                    <ViewButton title="VIEW NOW" key="disable"/>
                 </div>
             </div>
 
