@@ -8,3 +8,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
+// src
+// assets -> mg video
+// components -> footer -> footer.jsx and footer.css
+// constants -> json
+// pages -> home.jsx , productDetails.jsx, cart.jsx

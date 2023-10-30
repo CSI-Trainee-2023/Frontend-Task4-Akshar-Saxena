@@ -1,4 +1,6 @@
 import React from 'react'
+import shoppingLinks from '../constants/shoppingFooter.json'
+import moreLinks from '../constants/moreLinks.json'
 
 export default function Footer() {
   return (
@@ -19,21 +21,17 @@ export default function Footer() {
       <div className="footerCard">
         <h2>SHOPPING</h2>
         <ul>
-          <li>Your cart</li>
-          <li>Your orders</li>
-          <li>Compared items</li>
-          <li>Wishlist items</li>
-          <li>Shipping detail</li>
+          {shoppingLinks.map((element) => (
+            <li>{element.link}</li>
+          ))}
         </ul>
       </div>
       <div className="footerCard">
         <h2>MORE LINKS</h2>
         <ul>
-          <li>Blog</li>
-          <li>Gift Center</li>
-          <li>Buying Guides</li>
-          <li>New Arrivals</li>
-          <li>Clearance</li>
+          {moreLinks.map((element) => (
+            <li>{element.link}</li>
+          ))}
         </ul>
       </div>
       <div className="footerCard">
