@@ -1,13 +1,15 @@
 import React from 'react'
 import ViewButton from './ViewButton'
+import ratingImage from "../constants/ratingImages.json"
 
 export default function VerticalCard(props) {
+  const randIdx = Math.floor(Math.random() * ratingImage.length)
   return (
     <div className="verticalCardMain">
     <div className="verticalCard">
         <img src={props.image} alt="" />
         <h2>{props.title1}</h2>
-        <img src="../src/assets/rating.png" alt="" />
+        <img src={ratingImage[randIdx].src} alt="" />
         <h3>{props.title2}</h3>
     </div>
     <div className="hoverBox">
