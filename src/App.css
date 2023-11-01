@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* outline: 1px solid black; */
 }
 
 .nav {
@@ -535,6 +534,30 @@ hr{
 }
 .shoppingCard img{
   width: 200px;
+}
+
+.shoppingContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoppingCard h2,h3{
+  padding: 7px 0;
+}
+
+.shoppingCard span{
+  color: goldenrod;
+}
+
+.divider{
+  background-color: goldenrod;
+  height: 1px;
+  border: none;
+}
+#totalBill{
+  text-align: center;
 }
 
 #headingShopping{

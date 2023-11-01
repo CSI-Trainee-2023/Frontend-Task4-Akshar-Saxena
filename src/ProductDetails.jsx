@@ -4,19 +4,11 @@ import NavBar from './MyComponents/NavBar'
 import { useLocation } from 'react-router-dom'
 import Footer from './MyComponents/Footer'
 import { useEffect } from 'react'
+import data from './constants/addToCart.json'
 
 export default function ProductDetails() {
   const location = useLocation()
-  let data = []
-
-  try{
-    let temp = localStorage.getItem("data")
-    data.push(temp)
-  }
-  catch(e){
-    console.log(e)
-  }
-
+  var quantity = 1
   var posImage = 0
 
   useEffect(() => {
@@ -24,8 +16,15 @@ export default function ProductDetails() {
   }, [location]);
 
   function addToCart() {
-    data.push(`${location.state.productName}^${location.state.image}^${location.state.price}|`)
-    localStorage.setItem("data", data)
+    data.forEach((element) => {
+      if(element.desc == location.state.productName){
+        element.count += quantity
+      }
+    })
+  }
+
+  function SelectionHandler(e){
+    quantity = parseInt(e.target.value)
   }
 
   function goToNext() {
@@ -68,7 +67,7 @@ export default function ProductDetails() {
             <img src={location.state.image} alt="" />
           </div>
           <span><img src="assets/location.png" alt="" /> Not available in stores</span>
-          <select id="qty">Select Quantity
+          <select id="qty" onChange={SelectionHandler}>Select Quantity
             <option value="0">Select Quantity</option>
             <option value="1">1</option>
             <option value="2">2</option>

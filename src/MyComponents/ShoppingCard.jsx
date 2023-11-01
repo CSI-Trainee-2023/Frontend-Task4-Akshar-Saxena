@@ -5,8 +5,9 @@ export default function ShoppingCard(props) {
         <div className='shoppingCard'>
             <img src={props.image} alt="" />
             <div className="shoppingContent">
-                <h2>{props.proname}</h2>
-                <h3>{props.proprice}</h3>
+                <h2><span>Product Name :</span> {props.proname}</h2>
+                <h3><span>Price : </span>{props.proprice}</h3>
+                <h3><span>Quantity :</span> {props.qty}</h3>
             </div>
         </div>
     )
