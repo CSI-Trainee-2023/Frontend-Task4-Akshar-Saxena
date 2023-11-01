@@ -1,7 +1,7 @@
 import React from 'react'
-import brandLogo from '../assets/icons/brandLogo.png'
-import profileIcon from '../assets/icons/profile.png'
-import cartIcon from '../assets/icons/cart.png'
+import brandLogo from '../assets/brandLogo.png'
+import profileIcon from '../assets/profile.png'
+import cartIcon from '../assets/cart.png'
 import {Link} from 'react-router-dom'
 
 export default function NavBar() {

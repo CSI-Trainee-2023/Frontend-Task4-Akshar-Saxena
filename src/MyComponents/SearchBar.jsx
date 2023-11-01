@@ -1,5 +1,5 @@
 import React from 'react'
-import magGlass from '../assets/icons/magnifyingGlass.png'
+import magGlass from '../assets/magnifyingGlass.png'
 
 export default function SearchBar() {
   return (

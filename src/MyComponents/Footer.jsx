@@ -12,10 +12,10 @@ export default function Footer() {
         <p id="num">+12 3 0000 0000</p>
         <p id="mail">contact@brandemail.com</p>
         <div className="links">
-          <img src="../src/assets/icons/facebook.png" alt="" />
-          <img src="../src/assets/icons/twitter.png" alt="" />
-          <img src="../src/assets/icons/insta.png" alt="" />
-          <img src="../src/assets/icons/ytbe.png" alt="" />
+          <img src="../assets/facebook.png" alt="" />
+          <img src="../assets/twitter.png" alt="" />
+          <img src="../assets/insta.png" alt="" />
+          <img src="../assets/ytbe.png" alt="" />
         </div>
       </div>
       <div className="footerCard">

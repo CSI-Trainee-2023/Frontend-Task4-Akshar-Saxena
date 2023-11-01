@@ -6,11 +6,11 @@ import ViewButton from './MyComponents/ViewButton'
 import VerticalCard from './MyComponents/VerticalCard'
 import HorizontalCard from './MyComponents/HorizontalCard'
 import TopRatingCard from './MyComponents/TopRatingCard'
-import freeShipping from '../src/assets/icons/freeShipping.png'
-import refund from '../src/assets/icons/refund.png'
-import support from '../src/assets/icons/support.png'
-import verticalImages from '../src/constants/verticalImages.json'
-import topRating from '../src/constants/topRatingImages.json'
+import refund from './assets/refund.png'
+import freeShipping from './assets/freeShipping.png'
+import support from './assets/support.png'
+import verticalImages from './constants/verticalImages.json'
+import topRating from './constants/topRatingImages.json'
 
 export default function HomePage() {
     return (
@@ -36,7 +36,7 @@ export default function HomePage() {
 
             {/* Main Image */}
             <div className="main">
-                <img src='../src/assets/chairs/mainImage.png' alt="" />
+                <img src='../assets/mainImage.png' alt="" />
                 <div className="content">
                     <h3>HOT DEALS THIS WEEK</h3>
                     <h1>SALE 50% OFF MODERN FURNITURE</h1>
@@ -46,20 +46,20 @@ export default function HomePage() {
 
             {/* Horizontal Card Holder */}
             <div className="horizontalCardHolder">
-                <HorizontalCard image="../src/assets/chairs/vintageChair.png" title="INY VINTAGE CHAIR" />
-                <HorizontalCard image="../src/assets/items/vase.png" title="LARGE TERRACOTA VASE" />
+                <HorizontalCard image="assets/vintageChair.png" title="INY VINTAGE CHAIR" />
+                <HorizontalCard image="assets/vase.png" title="LARGE TERRACOTA VASE" />
             </div>
 
             {/* Vertical Card Holder */}
             <div className="verticalCardHolder" id='store'>
                 {verticalImages.map((element,id) => (
-                    <VerticalCard image={`../src/assets/items/${element.id}`} title1={element.desc} title2={element.price} details={element.details} list={verticalImages} key={id}/>
+                    <VerticalCard image={`assets/${element.id}`} title1={element.desc} title2={element.price} details={element.details} list={verticalImages} key={id}/>
                 ))}
             </div>
 
             {/* BedSheet Image */}
             <div className="bedSheetSection">
-                <img src="../src/assets/items/bedSheet.png" alt="" />
+                <img src="assets/bedSheet.png" alt="" />
                 <div className="overImageContent">
                     <h2>BEDSHEET SETS</h2>
                     <h3>$50.0 <span>$220.0</span></h3>
@@ -72,7 +72,7 @@ export default function HomePage() {
                 <h2>Top Rating</h2>
                 <div className="topRatingHolder">
                     {topRating.map((element,id) => (
-                        <TopRatingCard image={`../src/assets/items/${element.id}`} title1={element.desc} title2={element.price} key={id}/>
+                        <TopRatingCard image={`assets/${element.id}`} title1={element.desc} title2={element.price} key={id}/>
                     ))}
                 </div>
             </div>
@@ -85,7 +85,7 @@ export default function HomePage() {
                 </div>
                 <div className="emailInputField">
                     <input type="email" id="emailInput" />
-                    <a href="#"><img src="../src/assets/icons/email.png" alt="" /></a>
+                    <a href="#"><img src="assets/email.png" alt="" /></a>
                 </div>
             </div>
 

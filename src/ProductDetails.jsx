@@ -53,7 +53,7 @@ export default function ProductDetails() {
           <div id="itemPicture">
             <img src={location.state.image} alt="" />
           </div>
-          <span><img src="../src/assets/icons/location.png" alt="" /> Not available in stores</span>
+          <span><img src="assets/location.png" alt="" /> Not available in stores</span>
           <select id="qty">Select Quantity
             <option value="0">Select Quantity</option>
             <option value="1">1</option>
@@ -77,7 +77,7 @@ export default function ProductDetails() {
         <button id="prev" onClick={goToPrev}>&lt;</button>
         <button id="next" onClick={goToNext}>&gt;</button>
         {location.state.list.map((element) => (
-          <img className='slides' src={`../src/assets/items/${element.id}`} alt="" />
+          <img className='slides' src={`assets/${element.id}`} alt="" />
         ))}
       </div>
       <Footer />
