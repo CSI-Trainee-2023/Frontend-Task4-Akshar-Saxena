@@ -1,0 +1,47 @@
+[
+    {
+        "id": "Tray.png",
+        "desc": "Tray with Foot",
+        "price": "19.9$"
+    },
+    {
+        "id": "cushion.png",
+        "desc": "Twill Seat Cushion",
+        "price": "29.9$"
+    },
+    {
+        "id": "beverageGlass.png",
+        "desc": "Fluted Beverage Glass",
+        "price": "49.9$"
+    },
+    {
+        "id": "eggCup.png",
+        "desc": "Ceramic Egg Cup",
+        "price": "49.9$"
+    },
+    {
+        "id": "bambooBox.png",
+        "desc": "Small Bamboo Box",
+        "price": "9.99$"
+    },
+    {
+        "id": "cutleryBasket.png",
+        "desc": "Metal Cutlery Basket",
+        "price": "29.9$"
+    },
+    {
+        "id": "ceramicCups.png",
+        "desc": "4-pack Ceramic Cups",
+        "price": "49.9$"
+    },
+    {
+        "id": "Napkins.png",
+        "desc": "2-pack Linen Napkins",
+        "price": "9.99$"
+    },
+    {
+        "id": "stonewarePlate.png",
+        "desc": "Glazed Stoneware Plate",
+        "price": "99.9$"
+    }
+]

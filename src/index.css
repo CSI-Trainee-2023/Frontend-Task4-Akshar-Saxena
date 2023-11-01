@@ -1,0 +1,9 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #F3F6FF;
+    font-family: 'Roboto';
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "src": "./assets/one-star.png"
+    },
+    {
+        "src": "./assets/two-star.png"
+    },
+    {
+        "src": "./assets/three-star.png"
+    },
+    {
+        "src": "./assets/four-star.png"
+    },
+    {
+        "src": "./assets/five-star.png"
+    }
+]
