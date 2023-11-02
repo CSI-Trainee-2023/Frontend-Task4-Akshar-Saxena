@@ -25,7 +25,11 @@
 }
 
 .icons img {
-  width: 26px;
+  width: 20px !important;
+}
+
+#hamburger{
+  display: none;
 }
 
 .icons {
@@ -299,6 +303,10 @@ Link{
   left: 10%;
   transform: translateY(-50%);
   background-color: rgba(249, 211, 112, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .overImageContent h2,
@@ -625,6 +633,12 @@ hr{
   }
   ul:first-child li, .container, .banner{
     display: none;
+  }
+  .icons{
+    width: 40%;
+  }
+  #hamburger{
+    display: block;
   }
   .nav{
     width: 100%;

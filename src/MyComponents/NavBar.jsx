@@ -12,6 +12,7 @@ export default function NavBar() {
         <div className="icons">
           <img src={profileIcon} alt="" />
           <Link to="/cart"><img src={cartIcon} alt="" /></Link>
+          <a href=""><img id='hamburger' src="./assets/hamburger.png" alt="" /></a>
         </div>
       </div>
       <div className="lower">

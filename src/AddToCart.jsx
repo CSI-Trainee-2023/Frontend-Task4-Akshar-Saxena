@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import NavBar from './MyComponents/NavBar'
 import ShoppingCard from './MyComponents/ShoppingCard'
 import data from './constants/addToCart.json'
