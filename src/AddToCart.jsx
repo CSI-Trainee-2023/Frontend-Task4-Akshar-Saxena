@@ -11,12 +11,10 @@ export default function AddToCart() {
 
     let finalData = []
     data.forEach(element => {
-        console.log(element)
         if (element.count != 0) {
             finalData.push(element)
         }
     })
-    console.log(finalData)
     finalData.forEach(element => {
         total += parseFloat(element.price.slice(0, element.price.length-1)) * element.count
         items += element.count

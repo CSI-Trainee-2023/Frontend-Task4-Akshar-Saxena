@@ -21,6 +21,7 @@ export default function ProductDetails() {
         element.count += quantity
       }
     })
+    alert("Added to Cart!!")
   }
 
   function SelectionHandler(e){

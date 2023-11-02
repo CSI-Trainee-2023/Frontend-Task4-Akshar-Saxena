@@ -17,7 +17,6 @@ export default function NavBar() {
       </div>
       <div className="lower">
         <ul>
-          {/* <li><Link to="/">HOME</Link></li> */}
           <Link to="/" style={{textDecoration: "none"}}><li>HOME</li></Link>
           <li>STORE</li>
           <li>ACCESSORIES</li>
